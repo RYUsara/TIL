@@ -25,8 +25,15 @@ select * from RevStructs where child = 7666;
 4.만들어준 row를 통해 알림톡이 발송된 것과 비슷하게 만들 수 있다.
 
 -jol은 처음 문제집 진입시 얼마나 맞출지 예상하는 부분이다!
--
+-fok는 결과페이지에서 다음에도 얼마나 맞출지 자신감을 표현하는 부분이다!
 
-계속해서 
+-mq산정하는 부분 정리 
+quiz: 정규ai,포겟미낫(망각곡선문제)
+aiquiz:리얼ai
+learn:복습ai
+
+mysql에
+show full processlist; 쿼리를 실행시키면, 현재 서버에서 사용자들이 날리고 있는 쿼리문을 확인할 수 있다.(실시간으로)
+
 
 
