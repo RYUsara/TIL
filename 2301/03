@@ -1,1 +1,18 @@
-ㅇㅇ
+
+
+//메모라이징
+
+//강의 시청후 문제집이 한강씩 밀려서 출제. (미디어팀에서 Essential V2에 OT강의를 1강으로 추가하면서 발생한듯. IT팀에서 원복함)
+//증상 1 : 학생이 1강을 시청하면 AI쪽으로는 2강을 들었다고 정보가 들어와 2강 문제집 출제.
+//증상 2 : 학생이 40강을 들은경우 41강을 들었다고 정보가 들어옴. 41강은 없는 강의 이기때문에 단위이론정보등 데이터가 없음. 문제집 출제 코드에 기본문제와 단위이론을 ' , '로 split하는 코드가 들어가 있음. 이부분에서  'NoneType' object has no attribute 'split' 오류가 발생한것으로 예상됨. 방어코드 추가 필요.
+
+67서버에서 aiquiz를 풀때 커리큘럼이 undefined로 나오는 경우가 생김
+--> RevStructs테이블에 문제 번호 정보가 빠져있어서 생긴 문제였다.
+select * from Features where feature_id = "B01_02";
+SELECT * FROM FeatureProblems WHERE problem_id = 7674;
+select * from RevStructs where child = 7681;
+select * from RevStructs where child = 7666;
+
+
+
+
