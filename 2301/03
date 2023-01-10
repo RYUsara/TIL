@@ -35,5 +35,6 @@ learn:복습ai
 mysql에
 show full processlist; 쿼리를 실행시키면, 현재 서버에서 사용자들이 날리고 있는 쿼리문을 확인할 수 있다.(실시간으로)
 
+원래는 st page에서 문제집 풀이 완료 버튼 클릭 시 바로 lecture_mq 전체 mq다 가져오는데 -> 앞으로는 mq 
 
 
